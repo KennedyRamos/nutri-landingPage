@@ -1,0 +1,22 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+
+    /* Fonts */
+    --font-inter: 'inter', sans-serif;
+    --font-pacifico: "Pacifico", cursive;
+
+    /* spacing */
+    --spacing-2: 0.125rem;
+    --spacing-4: 0.25rem;
+    --spacing-8: 0.5rem;
+    --spacing-32: 2rem;
+
+    /* colors */
+    --primary-color: #FAFAFA;
+    --secondary-color: #1C1C1C;
+    --title-color: #DB343F;
+    --green-color: #2C4C3B;
+    --gray-color: #E5E7EB;
+}
