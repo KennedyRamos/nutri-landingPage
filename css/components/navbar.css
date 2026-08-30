@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.header__logo{
+    width: 2.5rem;
+}
+
+.header__navbar{
+    text-align: end;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 7rem 1.5rem 100vh 5rem;
+    background-color: var(--green-color);
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.header__navbar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media(min-width:720px){
+    *{
+        color: aliceblue;
+    }
+}

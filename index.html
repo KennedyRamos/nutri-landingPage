@@ -11,27 +11,31 @@
 <body>
 
     <!-- header page -->
-    <header>
+    <header class="header">
         <!-- logo -->
-        <a href="">
-            <img src="assets/img/G.svg" alt="logo Gabriela Maria nutricionista">
+        <a class="header__logo" href="">
+            <img src="assets/img/G.svg" alt="logo Gabriela Maria nutricionista" class="header__logo-img">
         </a>
 
+        <!-- nav bar mobile -->
+
+        <img src="assets/img/menu.png" id="menu" alt="">
+
         <!-- navbar -->
-        <nav>
-            <ul>
+        <nav class="header__navbar" id="navbar">
+            <ul class="header__navbar-links">
                 <!-- About me -->
-                <li>
+                <li class="header__navbar-about">
                     <a href="#about">Sobre mim</a>
                 </li>
 
                 <!-- methodology -->
-                <li>
+                <li class="header__navbar-methodology">
                     <a href="#methodology">metodologia</a>
                 </li>
 
                 <!-- contact -->
-                <li>
+                <li class="header__navbar-contact">
                     <a href="#contact">Contato</a>
                 </li>
             </ul>
@@ -153,5 +157,7 @@
             <a href="">Dev Kennedy Ramos</a>
         </div>
     </footer>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

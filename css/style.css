@@ -2,3 +2,5 @@
 @import url(base/reset.css);
 @import url(base/variables.css);
 
+/* import components css */
+@import url(components/navbar.css);
