@@ -4,6 +4,12 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: var(--font-inter);
+    
+}
+
+a{
+    color: inherit;
 }
 
 img{
