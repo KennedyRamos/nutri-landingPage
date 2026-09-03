@@ -1,0 +1,82 @@
+.about {
+    padding: calc(var(--spacing-64) + var(--spacing-32)) var(--spacing-32) var(--spacing-64);
+    background-color: var(--primary-color);
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-32);
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+
+
+.about__content-image {
+    order: 1;
+    width: 8.75rem;
+}
+
+.about__content-gabriela {
+    order: 2;
+    width: 100%;
+    max-width: 20rem;
+    border-radius: var(--spacing-8);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+.about__content-text {
+    order: 3;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--secondary-color);
+}
+
+
+@media (min-width: 48rem) {
+    .about__content {
+        max-width: 42.5rem;
+    }
+
+    .about__content-text {
+        font-size: 1.05rem;
+    }
+}
+
+
+@media (min-width: 64rem) {
+    .about {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .about__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "gabriela logo"
+            "gabriela text";
+        align-items: start;
+        gap: var(--spacing-48) var(--spacing-64);
+        max-width: none;
+        text-align: left;
+    }
+
+    .about__content-gabriela {
+        grid-area: gabriela;
+        max-width: 25rem;
+        align-self: center;
+    }
+
+    .about__content-image {
+        grid-area: logo;
+        justify-self: start;
+    }
+
+    .about__content-text {
+        grid-area: text;
+    }
+}

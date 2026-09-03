@@ -4,3 +4,6 @@
 
 /* import components css */
 @import url(components/navbar.css);
+
+/* import layouts css */
+@import url(layouts/about.css);
