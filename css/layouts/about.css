@@ -1,5 +1,5 @@
 .about {
-    padding: calc(var(--spacing-64) + var(--spacing-32)) var(--spacing-32) var(--spacing-64);
+    margin: 3rem;
     background-color: var(--primary-color);
 }
 
@@ -15,17 +15,14 @@
 
 
 .about__content-image {
-    order: 1;
-    width: 8.75rem;
+    width: 15rem;
 }
 
 .about__content-gabriela {
-    order: 2;
-    width: 100%;
+    width: 70%;
     max-width: 20rem;
-    border-radius: var(--spacing-8);
+    border-radius: 50rem;
     overflow: hidden;
-    box-shadow: var(--shadow-soft);
 }
 
 .about__content-text {
@@ -50,33 +47,26 @@
 @media (min-width: 64rem) {
     .about {
         max-width: 75rem;
-        margin: 0 auto;
     }
 
     .about__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "gabriela logo"
-            "gabriela text";
         align-items: start;
-        gap: var(--spacing-48) var(--spacing-64);
+        gap: auto;
         max-width: none;
-        text-align: left;
+        text-align: center;
+
     }
 
     .about__content-gabriela {
-        grid-area: gabriela;
-        max-width: 25rem;
-        align-self: center;
+        max-width: 20rem;
+        margin: auto;
+        grid-row: 1/3;
     }
 
     .about__content-image {
-        grid-area: logo;
-        justify-self: start;
-    }
-
-    .about__content-text {
-        grid-area: text;
+        margin: auto auto 0;
+        width: 25rem;
     }
 }
