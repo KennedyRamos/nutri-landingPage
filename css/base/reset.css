@@ -5,7 +5,10 @@
     text-decoration: none;
     list-style: none;
     font-family: var(--font-inter);
-    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a{
@@ -17,3 +20,13 @@ img{
     max-width: 100%;
 }
 
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+input {
+    font-family: inherit;
+}
